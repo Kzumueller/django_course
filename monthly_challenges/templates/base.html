@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block page_title %}My Challenges{% endblock %}</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre&display=swap');</style>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    {% block css %}{% endblock %}
+</head>
+<body>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
